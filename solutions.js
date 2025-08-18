@@ -24,10 +24,10 @@ function findLargest(arr) {
   if (!Array.isArray(arr)|| arr.length === 0) {
     return "Los datos de entrada no son adecuados";
   }
-  let largest = arr[0];
-  for (let i = 1;i < arr.length;i++) {
+  let largest= arr[0];
+  for (let i = 1;i < arr.length; i++) {
     if (arr[i] > largest) {
-      largest = arr[i];
+      largest =arr[i];
     }
   }
   return largest;
@@ -36,7 +36,17 @@ function findLargest(arr) {
 
 // Count Vowels in a String
 function countVowels(str) {
-  // Add your code here
+  if (typeof str!== "string") {
+    return "Los datos de entrada no son adecuados";
+  }
+  let count = 0;
+  let vowels = "AEIOUaeiou";
+  for (let i =0;i < str.length; i++) {
+    if (vowels.includes(str[i])) {
+      count++;
+    }
+  }
+  return count;
 }
 
 // Check if a Number is Prime
