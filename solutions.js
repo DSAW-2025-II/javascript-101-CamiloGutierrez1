@@ -10,8 +10,7 @@ function sum(a, b) {
 // Factorial of a Number
 function factorial(n) {
   if (typeof n !== "number" || n < 0) {
-    console.log("Los datos de entrada no son adecuados");
-    return;
+    return"Los datos de entrada no son adecuados";
   }
   let count= 1 ;
   for(let i = 1;i <=n; i++){
@@ -53,8 +52,7 @@ function countVowels(str) {
 // Check if a Number is Prime
 function isPrime(n) {
   if (typeof n !== "number" || n< 2) {
-    console.log("Los datos de entrada no son adecuados");
-    return;
+    return"Los datos de entrada no son adecuados";
   }
   for (let i =2;i <= Math.sqrt(n);i++) {
     if (n % i === 0) 
