@@ -9,8 +9,9 @@ function sum(a, b) {
 
 // Factorial of a Number
 function factorial(n) {
-  while (n<0|| typeof n !== "number"){
-    return "Los datos de entrada no son adecuados";
+  if (typeof n !== "number" || n < 0) {
+    console.log("Los datos de entrada no son adecuados");
+    return;
   }
   let count= 1 ;
   for(let i = 1;i <=n; i++){
