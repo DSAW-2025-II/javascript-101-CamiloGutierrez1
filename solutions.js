@@ -1,20 +1,37 @@
 // Sum of Two Numbers
 function sum(a, b) {
-  if(typeof a!== "number" || typeof b!=="number") {
-    return "Error, a & b must be numbers"
-  }else{
+    if(typeof a!== "number"||typeof b!=="number") {
+      return "Los datos de entrada no son adecuados"
+    }else{
     return a + b;
   }   
-}console.log(sum(2,3)); 
+} 
 
 // Factorial of a Number
 function factorial(n) {
-  // Add your code here
+  while (n<0|| typeof n !== "number"){
+    return "Los datos de entrada no son adecuados"
+  }
+  let count= 1 ;
+  for(let i = 1;i <=n; i++){
+    count= count * i;
+  }
+  return count;
 }
 
 // Find the Largest Number
 function findLargest(arr) {
-  // Add your code here
+  if (!Array.isArray(arr)|| arr.length === 0) {
+    return "Los datos de entrada no son adecuados";
+  }
+  let largest = arr[0];
+  for (let i = 1;i < arr.length;i++) {
+    if (arr[i] > largest) {
+      largest = arr[i];
+    }
+  }
+  return largest;
+  
 }
 
 // Count Vowels in a String
