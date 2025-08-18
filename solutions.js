@@ -1,7 +1,11 @@
 // Sum of Two Numbers
 function sum(a, b) {
-  // Add your code here
-}
+  if(typeof a!== "number" || typeof b!=="number") {
+    return "Error, a & b must be numbers"
+  }else{
+    return a + b;
+  }   
+}console.log(sum(2,3)); 
 
 // Factorial of a Number
 function factorial(n) {
@@ -30,3 +34,4 @@ module.exports = {
   countVowels,
   isPrime,
 };
+
