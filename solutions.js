@@ -1,8 +1,8 @@
 // Sum of Two Numbers
 function sum(a, b) {
-    if(typeof a!== "number"||typeof b!=="number") {
+  if(typeof a!== "number"||typeof b!=="number") {
       return "Los datos de entrada no son adecuados"
-    }else{
+  }else{
     return a + b;
   }   
 } 
@@ -52,8 +52,7 @@ function countVowels(str) {
 // Check if a Number is Prime
 function isPrime(n) {
   if (typeof n !== "number" || n< 2) {
-    console.log("Los datos de entrada no son adecuados");
-    return;
+    return("Los datos de entrada no son adecuados");  return;
   }
   for (let i =2;i <= Math.sqrt(n);i++) {
     if (n % i === 0) 
